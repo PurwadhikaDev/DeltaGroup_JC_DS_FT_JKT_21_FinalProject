@@ -23,6 +23,8 @@ Perusahaan E-commerce menghadapi tantangan dalam memprediksi dan mencegah pelang
 ## Tujuan
 Tujuannya adalah mengembangkan kemampuan untuk memprediksi kemungkinan seorang pelanggan akan berhenti berlangganan, memungkinkan fokus upaya retensi pada pelanggan yang terindikasi potensial beralih, dan mengurangi biaya yang tidak perlu.
 
+**Stake Holder: Marketing Team dan Customer Retention Team (CRT)**
+
 ## Pendekatan Analitis
 Pendekatan analitis melibatkan pembuatan, evaluasi, dan implementasi model klasifikasi machine learning yang dapat memprediksi churn pelanggan berdasarkan data historis.
 
