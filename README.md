@@ -23,7 +23,7 @@ Perusahaan E-commerce menghadapi tantangan dalam memprediksi dan mencegah pelang
 ## Tujuan
 Tujuannya adalah mengembangkan kemampuan untuk memprediksi kemungkinan seorang pelanggan akan berhenti berlangganan, memungkinkan fokus upaya retensi pada pelanggan yang terindikasi potensial beralih, dan mengurangi biaya yang tidak perlu.
 
-**Stake Holder: Marketing Team dan Customer Retention Team (CRT)**
+**Stakeholder: Marketing Team dan Customer Retention Team (CRT)**
 
 ## Pendekatan Analitis
 Pendekatan analitis melibatkan pembuatan, evaluasi, dan implementasi model klasifikasi machine learning yang dapat memprediksi churn pelanggan berdasarkan data historis.
@@ -118,7 +118,9 @@ Proses ini bertujuan untuk memberikan solusi prediktif yang optimal dalam mengid
 
 ## Kesimpulan
 
-### Evaluasi Dampak Penggunaan Model Machine Learning
+## Kesimpulan Model
+
+#### Evaluasi Dampak Penggunaan Model Machine Learning
 
 Berdasarkan confussion matrix pada hasil prediksi model final, diperoleh hasil sebagai berikut:
 
@@ -148,6 +150,15 @@ Berdasarkan confussion matrix pada hasil prediksi model final, diperoleh hasil s
 
 **Kesimpulan:**
 Berdasarkan data uji, model final dapat membantu perusahaan menurunkan kerugian hingga 31.13% dalam sebulan menggunakan machine learning. Penggunaan model ini memungkinkan perusahaan untuk lebih efisien dalam memberikan program retensi kepada pelanggan yang berpotensi churn, sehingga mengurangi biaya yang dikeluarkan tanpa mengurangi efektivitas program tersebut.
+
+## Kesimpulan Analisis
+
+Berdasarkan analisis yang telah dilakukan, berikut adalah kesimpulan yang paling tepat dan relevan:
+1. **Status Pernikahan Mempengaruhi Tingkat Churn**: Pelanggan dengan status pernikahan "Single" memiliki tingkat churn yang paling tinggi, menekankan perlunya fokus retensi khusus untuk segmen ini.
+2. **Keluhan Pelanggan Berdampak pada Churn**: Pelanggan yang mengajukan keluhan atau complain memiliki kemungkinan besar untuk churn. Ini menunjukkan urgensi meningkatkan layanan pelanggan dan respons terhadap masalah yang dihadapi pelanggan.
+3. **Pemberian Cashback di Awal Penting**: Cashback pada periode awal (0-2) berada di bawah rata-rata, menandakan kebutuhan untuk meningkatkan insentif awal sebagai strategi retensi pelanggan.
+4. **Strategi Pemasaran Kupon Perlu Evaluasi**: Meskipun kupon sering digunakan oleh pelanggan, terdapat tingkat churn yang masih tinggi di tenure 1. Hal ini menunjukkan perlunya revamp atau evaluasi ulang strategi pemasaran yang melibatkan penggunaan kupon.
+5. **Faktor Logistik dan Lokasi Penting Diperhatikan**: Jarak antara gudang dan rumah pelanggan mempengaruhi keputusan untuk churn, khususnya untuk jarak yang lebih jauh. Ini mengindikasikan perlunya optimasi logistik dan pelayanan untuk meningkatkan kepuasan pelanggan dan mengurangi alasan untuk churn.
 
 ## Rekomendasi
 #### **Rekomendasi Untuk Perusahaan**
