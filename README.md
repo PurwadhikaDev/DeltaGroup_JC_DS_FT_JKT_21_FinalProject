@@ -1,5 +1,13 @@
 # Prediksi Churn E-commerce
 
+## Link Terkait
+
+- [Dashboard Tableau: Analisis Churn E-commerce](https://public.tableau.com/app/profile/ali.wafa.afif.ramdhan7404/viz/JCDS2104TableauDeltaTeam/ChurnDashboard?publish=yes)
+- [Dataset Raw: Churn E-commerce](https://www.kaggle.com/datasets/ankitverma2010/ecommerce-customer-churn-analysis-and-prediction)
+- [Dataset Cleaned: Churn E-commerce](https://github.com/AliWafaar/JCDS-2104-Delta-Team/blob/main/E%20Commerce%20Dataset_Modified.xlsx)
+- [Pipeline Best Model(.sav)](https://github.com/AliWafaar/Finpro-JCDS-2104-Delta-Team/blob/main/Final_Model_E-Commerce_Customer_Churn.sav)
+- [Wokbook (.ipynb)](https://github.com/AliWafaar/Finpro-JCDS-2104-Delta-Team/blob/main/Finpro_Delta_JCDS_2104.ipynb)
+
 ## Latar Belakang
 Di era bisnis modern, E-commerce menjadi pilar utama dalam ekonomi global dengan perkembangan teknologi yang pesat. Sebagai sarana transaksi online, E-commerce membuka peluang pertumbuhan yang besar. Dalam konteks ini, retensi pelanggan menjadi krusial untuk kesuksesan E-commerce di tengah persaingan yang ketat.
 
@@ -83,7 +91,7 @@ Dalam tahap pemodelan, digunakan pendekatan *pipeline* yang melibatkan *Iterativ
 1. **Pipeline Iterative Imputer, OHE, dan Scaler:**
    - *Iterative Imputer* mengisi nilai-nilai yang hilang dengan estimasi yang lebih akurat.
    - *One-Hot Encoding (OHE)* mengonversi variabel kategorikal menjadi format numerik.
-   - *Standard Scaler* menormalkan skala data.
+   - *Robust Scaler* menormalkan skala data.
 
 2. **Seleksi Model dan Benchmarking:**
    - Beberapa model machine learning, seperti *Logistic Regression, Random Forest, dan XGBoost*, dievaluasi untuk memilih model terbaik.
@@ -106,12 +114,12 @@ Proses ini bertujuan untuk memberikan solusi prediktif yang optimal dalam mengid
 
 ### Evaluasi Dampak Penggunaan Model Machine Learning
 
-Berdasarkan Confusion Matrix pada hasil prediksi model final, diperoleh hasil sebagai berikut:
+Berdasarkan confussion matrix pada hasil prediksi model final, diperoleh hasil sebagai berikut:
 
-- True Positive (Pelanggan yang actual churn dan diprediksi churn): 172 orang
-- False Negative (Pelanggan yang actual churn tetapi diprediksi tidak churn): 18 orang
-- False Positive (Pelanggan yang actual tidak churn tetapi diprediksi churn): 12 orang
-- True Negative (Pelanggan yang actual tidak churn dan diprediksi tidak churn): 924 orang
+- Jumlah pelanggan yang aktualnya *churn* dan diprediksi *churn* (**True Positive**) : 175 orang
+- Jumlah pelanggan yang aktualnya *churn* tetapi diprediksi tidak *churn* (**False Negative**) : 15 orang
+- Jumlah pelanggan yang aktualnya tidak *churn* tetapi diprediksi *churn* (**False Positive**) : 16 orang
+- Jumlah pelanggan yang aktualnya tidak *churn* dan diprediksi tidak *churn* (**True Negative**) : 920 orang
 
 ### Dampak Keuangan
 
@@ -119,18 +127,46 @@ Berdasarkan Confusion Matrix pada hasil prediksi model final, diperoleh hasil se
 - Biaya akibat kehilangan pelanggan (Churn) = $274 per bulan per pelanggan
 
 #### Estimasi Biaya Tanpa Model Machine Learning
-- Total biaya tanpa model machine learning: $82,912.4 per bulan
-- Calon pelanggan yang kita berikan program retensi: 1,126 orang (total pelanggan)
+- Total biaya tanpa model machine learning: $82912,4 per bulan
+- Calon pelanggan yang kita berikan program retensi: 1126 orang (total pelanggan)
 - Calon pelanggan yang aktualnya churn: 190 orang
 
 #### Estimasi Biaya dengan Model Machine Learning
-- Total biaya dengan model machine learning: $57,101.6 per bulan
+- Total biaya dengan model machine learning: $57293,46 per bulan
 - Calon pelanggan yang akan diberikan program retensi: 184 orang (True Positive + False Positive)
 - Calon pelanggan yang aktualnya churn: 190 orang
 
 ### Manfaat Penggunaan Model Machine Learning
-- Total penurunan potensial loss: $82,912.4 - $57,101.6 = $25,810.8 per bulan
-- Persentase penurunan: 31.13%
+- Total penurunan potensial loss: $82912.4 - $57101.6 = $25619 per bulan
+- Persentase penurunan: 30,90%
 
 **Kesimpulan:**
 Berdasarkan data uji, model final dapat membantu perusahaan menurunkan kerugian hingga 31.13% dalam sebulan menggunakan machine learning. Penggunaan model ini memungkinkan perusahaan untuk lebih efisien dalam memberikan program retensi kepada pelanggan yang berpotensi churn, sehingga mengurangi biaya yang dikeluarkan tanpa mengurangi efektivitas program tersebut.
+
+## Rekomendasi
+#### **Rekomendasi Untuk Perusahaan**
+- **Program Diskon untuk Single**: Kembangkan program diskon atau penawaran khusus untuk pelanggan dengan status "Single" untuk meningkatkan retensi di segmen ini.
+- **Review Periode Promo**: Evaluasi ulang periode promo yang diberikan dalam minggu-minggu awal kepada pelanggan untuk memastikan mereka tidak hanya memanfaatkannya sebelum berhenti menggunakan layanan.
+- **Perbaikan Kualitas Produk**: Lakukan audit kualitas untuk kategori "Mobile Phone", "Laptop", dan "Accessory" berdasarkan feedback pelanggan untuk mengurangi keluhan.
+- **Pelatihan Khusus untuk Laki-laki**: Latih tim penjualan untuk lebih memahami kebutuhan dan kecenderungan pelanggan laki-laki sehingga dapat memberikan solusi yang lebih sesuai dan mengurangi tingkat churn.
+- **Survey Kepuasan Pelanggan**: Lakukan survei kepuasan pelanggan khusus untuk kategori produk dengan keluhan tertinggi untuk mendapatkan wawasan langsung dari pelanggan.
+- **Paket Selamat Datang Khusus**: Tawarkan insentif seperti cashback atau diskon khusus untuk pelanggan baru pada periode tenure 0-2 untuk meningkatkan loyalitas pelanggan baru dan meminimalkan tingkat churn di periode awal penggunaan.
+- **Optimalkan Strategi Kupon**: Revitalisasi program kupon dengan penawaran yang lebih menarik untuk mengurangi tingkat churn pada periode tenure 1.
+- **Diskon atau Layanan Gratis Ongkir untuk Jarak Jauh**: Tawarkan diskon atau layanan tambahan gratis biaya pengiriman untuk pelanggan yang berada dalam jarak rumah yang lebih jauh dari gudang.
+- **Implementasi Sistem Keluhan**: Bangun sistem pelaporan keluhan yang efektif di situs web atau aplikasi perusahaan untuk memudahkan pelanggan melaporkan masalah mereka.
+- **Program Loyalitas**: Rancang program loyalitas dengan reward khusus untuk pelanggan yang telah menggunakan layanan selama periode tertentu, memotivasi mereka untuk tetap setia.
+- **Pelatihan Customer Service**: Khususnya bagi tim layanan pelanggan, berikan pelatihan mendalam tentang cara menangani keluhan, komplain, dan kritik dari pelanggan dengan cara yang profesional dan efektif.
+- **Analisis Data Periodik**: Tetapkan jadwal rutin untuk melakukan analisis data perilaku pelanggan, keluhan, dan keputusan churn untuk memastikan strategi yang diterapkan terus relevan dan efektif.
+- **Aplikasi Terhadap Model Machine Learning**: Perusahaan perlu menggunakan machine learning yang sudah dibuat, agar dapat mengurangi kerugian bagi perusahaan dengan memberikan promosi tepat sasaran kepada customer yang akan melakukan churn.
+
+Dengan menerapkan rekomendasi-rekomendasi spesifik ini, perusahaan dapat lebih fokus dalam upayanya untuk meningkatkan retensi pelanggan dan mengurangi tingkat churn.
+
+#### **Rekomendasi Untuk Model**
+- **Optimalisasi Variabel**: Periksa kembali dan seleksi variabel yang paling signifikan untuk memastikan model hanya memasukkan variabel yang memberikan dampak signifikan terhadap prediksi churn.
+- **Tuning Hyperparameter**: Lanjutkan proses tuning hyperparameter pada model XGBoost untuk meningkatkan performa model, mengurangi overfitting, dan mencapai prediksi yang lebih akurat.
+- **Interpretasi Model**: Gunakan teknik interpretasi seperti SHAP atau LIME untuk mendalaminya, sehingga dapat memahami variabel apa saja yang paling mempengaruhi keputusan churn dan bagaimana interaksi antar variabel tersebut.
+- **Pembaharuan Real-time**: Integrasikan model ke dalam sistem yang beroperasi secara real-time agar perusahaan dapat dengan cepat merespons perilaku pelanggan dan mengambil tindakan yang sesuai untuk mencegah churn.
+- **Pengoptimalan Biaya**: Dengan mempertimbangkan estimasi biaya dari model, mengkaji ulang atau melakukan penyesuaian strategi retensi pelanggan untuk memastikan alokasi sumber daya yang efektif dan efisien, serta mengurangi biaya yang tidak perlu.
+- **Feedback Loop Pelanggan**: Implementasikan mekanisme feedback dari pelanggan untuk memvalidasi prediksi dan terus memperbaiki model. Ini dapat membantu dalam memastikan model tetap relevan dan akurat seiring waktu.
+
+Dengan mengikuti rekomendasi-rekomendasi di atas, perusahaan dapat meningkatkan efektivitas strategi retensi dan mengurangi potensi churn pelanggan.
