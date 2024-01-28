@@ -162,16 +162,14 @@ Berdasarkan analisis yang telah dilakukan, berikut adalah kesimpulan yang paling
 
 ## Rekomendasi
 #### **Rekomendasi Untuk Perusahaan**
-- **Program Diskon untuk Single**: Kembangkan program diskon atau penawaran khusus untuk pelanggan dengan status "Single" untuk meningkatkan retensi di segmen ini.
-- **Review Periode Promo**: Evaluasi ulang periode promo yang diberikan dalam minggu-minggu awal kepada pelanggan untuk memastikan mereka tidak hanya memanfaatkannya sebelum berhenti menggunakan layanan.
-- **Perbaikan Kualitas Produk**: Lakukan audit kualitas untuk kategori "Mobile Phone", "Laptop", dan "Accessory" berdasarkan feedback pelanggan untuk mengurangi keluhan.
-- **Pelatihan Khusus untuk Laki-laki**: Latih tim penjualan untuk lebih memahami kebutuhan dan kecenderungan pelanggan laki-laki sehingga dapat memberikan solusi yang lebih sesuai dan mengurangi tingkat churn.
-- **Survey Kepuasan Pelanggan**: Lakukan survei kepuasan pelanggan khusus untuk kategori produk dengan keluhan tertinggi untuk mendapatkan wawasan langsung dari pelanggan.
-- **Paket Selamat Datang Khusus**: Tawarkan insentif seperti cashback atau diskon khusus untuk pelanggan baru pada periode tenure 0-2 untuk meningkatkan loyalitas pelanggan baru dan meminimalkan tingkat churn di periode awal penggunaan.
-- **Optimalkan Strategi Kupon**: Revitalisasi program kupon dengan penawaran yang lebih menarik untuk mengurangi tingkat churn pada periode tenure 1.
-- **Diskon atau Layanan Gratis Ongkir untuk Jarak Jauh**: Tawarkan diskon atau layanan tambahan gratis biaya pengiriman untuk pelanggan yang berada dalam jarak rumah yang lebih jauh dari gudang.
+- **Audit Kualitas Produk**: Lakukan audit kualitas dan regulasi produk berdasarkan feedback pelanggan, terutama untuk kategori ”Grocery”,"Mobile Phone", dan "Fashion".
+- **Perhatian Khusus untuk Segment Pelanggan Pria dan Single**: Berikan perhatian khusus terhadap segment pelanggan laki-laki dan segment pelanggan single seperti promo cashback untuk produk (Komputer Gaming,Kemaja,dll) untuk mengurangi resiko churn.
+- **Survey Kepuasan Pelanggan**: Lakukan survei kepuasan pelanggan khusus untuk kategori produk dengan keluhan tertinggi (Grocery,Mobile Phone dan Fashion) untuk mendapatkan wawasan langsung dari pelanggan.
+- **Paket Selamat Datang Khusus**: Tawarkan insentif seperti cashback atau diskon khusus untuk pelanggan baru pada periode tenure 0-1 bulan untuk meningkatkan loyalitas pelanggan baru dan meminimalkan tingkat churn di periode awal penggunaan.
+- **Optimalkan Strategi Kupon**: Revitalisasi program kupon dengan penawaran yang lebih menarik untuk mengurangi tingkat churn pada periode tenure 0 dan 1 bulan.
+- **Diskon atau Layanan Gratis Ongkir untuk Jarak Jauh**: Tawarkan diskon atau layanan tambahan gratis biaya pengiriman untuk pelanggan yang berada dalam jarak rumah yang jauh (15+ Miles) dari gudang.
 - **Implementasi Sistem Keluhan**: Bangun sistem pelaporan keluhan yang efektif di situs web atau aplikasi perusahaan untuk memudahkan pelanggan melaporkan masalah mereka.
-- **Program Loyalitas**: Rancang program loyalitas dengan reward khusus untuk pelanggan yang telah menggunakan layanan selama periode tertentu, memotivasi mereka untuk tetap setia.
+- **Program Loyalitas**: Rancang program loyalitas dengan reward khusus untuk pelanggan yang telah menggunakan layanan selama periode 1 bulan keatas, untuk memotivasi mereka untuk tetap setia.
 - **Pelatihan Customer Service**: Khususnya bagi tim layanan pelanggan, berikan pelatihan mendalam tentang cara menangani keluhan, komplain, dan kritik dari pelanggan dengan cara yang profesional dan efektif.
 - **Analisis Data Periodik**: Tetapkan jadwal rutin untuk melakukan analisis data perilaku pelanggan, keluhan, dan keputusan churn untuk memastikan strategi yang diterapkan terus relevan dan efektif.
 - **Aplikasi Terhadap Model Machine Learning**: Perusahaan perlu menggunakan machine learning yang sudah dibuat, agar dapat mengurangi kerugian bagi perusahaan dengan memberikan promosi tepat sasaran kepada customer yang akan melakukan churn.
@@ -181,6 +179,7 @@ Dengan menerapkan rekomendasi-rekomendasi spesifik ini, perusahaan dapat lebih f
 #### **Rekomendasi Untuk Model**
 - **Optimalisasi Variabel**: Periksa kembali dan seleksi variabel yang paling signifikan untuk memastikan model hanya memasukkan variabel yang memberikan dampak signifikan terhadap prediksi churn.
 - **Tuning Hyperparameter**: Lanjutkan proses tuning hyperparameter pada model XGBoost untuk meningkatkan performa model, mengurangi overfitting, dan mencapai prediksi yang lebih akurat.
+- **Predict Proba** : Dengan menggunakan predict proba, kita dapat lebih fokus dan lebih terarah kepada top customer dengan probabilitas Churn yang tinggi.
 - **Interpretasi Model**: Gunakan teknik interpretasi seperti SHAP atau LIME untuk mendalaminya, sehingga dapat memahami variabel apa saja yang paling mempengaruhi keputusan churn dan bagaimana interaksi antar variabel tersebut.
 - **Pembaharuan Real-time**: Integrasikan model ke dalam sistem yang beroperasi secara real-time agar perusahaan dapat dengan cepat merespons perilaku pelanggan dan mengambil tindakan yang sesuai untuk mencegah churn.
 - **Pengoptimalan Biaya**: Dengan mempertimbangkan estimasi biaya dari model, mengkaji ulang atau melakukan penyesuaian strategi retensi pelanggan untuk memastikan alokasi sumber daya yang efektif dan efisien, serta mengurangi biaya yang tidak perlu.
