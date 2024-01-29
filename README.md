@@ -9,8 +9,8 @@ Selamat datang di proyek prediksi churn E-commerce kami. Dalam proyek ini, kami 
 - [Dashboard Tableau: Analisis Churn E-commerce](https://public.tableau.com/app/profile/ali.wafa.afif.ramdhan7404/viz/JCDS2104TableauDeltaTeam/ChurnDashboard?publish=yes)
 - [Dataset Raw: Churn E-commerce](https://www.kaggle.com/datasets/ankitverma2010/ecommerce-customer-churn-analysis-and-prediction)
 - [Dataset Cleaned: Churn E-commerce](https://github.com/AliWafaar/JCDS-2104-Delta-Team/blob/main/E%20Commerce%20Dataset_Modified.xlsx)
-- [Pipeline Best Model(.sav)](https://github.com/AliWafaar/Finpro-JCDS-2104-Delta-Team/blob/main/Final_Model_E-Commerce_Customer_Churn.sav)
-- [Wokbook (.ipynb)](https://github.com/AliWafaar/Finpro-JCDS-2104-Delta-Team/blob/main/Finpro_Delta_JCDS_2104.ipynb)
+- [Pipeline Best Model(.sav)](https://github.com/PurwadhikaDev/DeltaGroup_JC_DS_FT_JKT_21_FinalProject/blob/main/Final_Model_E-Commerce_Customer_Churn.sav)
+- [Wokbook (.ipynb)](https://github.com/PurwadhikaDev/DeltaGroup_JC_DS_FT_JKT_21_FinalProject/blob/main/Finpro_Delta_JCDS_2104.ipynb)
 
 ## Latar Belakang
 Di era bisnis modern, E-commerce menjadi pilar utama dalam ekonomi global dengan perkembangan teknologi yang pesat. Sebagai sarana transaksi online, E-commerce membuka peluang pertumbuhan yang besar. Dalam konteks ini, retensi pelanggan menjadi krusial untuk kesuksesan E-commerce di tengah persaingan yang ketat.
